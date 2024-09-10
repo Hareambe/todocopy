@@ -1,0 +1,165 @@
+.font-medium {
+    font-weight: 500;
+}
+
+.white-space-nowrap {
+    white-space: nowrap;
+}
+
+.text-overflow-ellipsis {
+    text-overflow: ellipsis;
+}
+
+.overflow-hidden {
+    overflow: hidden;
+}
+
+.line-through {
+    text-decoration: line-through;
+}
+
+.p-column-filter-icon {
+    background-color: transparent; /* Ensures background is consistent */
+    box-shadow: none; /* Removes any shadow */
+    color: inherit; /* Ensures the color is inherited */
+}
+
+.p-column-filter-icon:focus,
+.p-column-filter-icon:active {
+    background-color: transparent; /* Ensures consistent background */
+    box-shadow: none; /* Removes shadow when focused or active */
+    color: inherit; /* Ensures color stays consistent */
+}
+
+.p-button-primary {
+    background-color: #3498db;
+    border: none;
+}
+
+.p-button-primary:hover {
+    background-color: #2980b9;
+}
+
+.p-button-rounded {
+    border-radius: 50%;
+}
+
+.p-button-text {
+    background-color: transparent;
+    color: inherit;
+}
+
+.p-button-sm {
+    font-size: 0.875rem;
+    padding: 0.5rem 0.75rem;
+}
+
+.bildirim-label {
+    padding: 0.25rem 0.5rem;
+    border-radius: 0.25rem;
+    color: white;
+    display: inline-block;
+    font-size: 0.875rem;
+    text-align: center;
+}
+
+.date-label {
+    padding: 0.4rem 0.4rem;
+    border-radius: 0.4rem;
+    color: white;
+    display: inline-block;
+    font-size: 0.95rem;
+}
+
+.date-label-green {
+    background-color: green;
+}
+
+.date-label-yellow {
+    background-color: rgb(247, 247, 51);
+    color: black;
+}
+
+.date-label-red {
+    background-color: rgb(233, 4, 4);
+}
+
+/* General Styles for Non-Mobile Devices */
+.confirm-dialog {
+    width: 32vw;
+    text-align: center;
+}
+
+.confirm-dialog-content {
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.confirm-dialog-buttons {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 1vw;
+}
+
+.cancel-button,
+.confirm-button {
+    background-color: #f5f5f5;
+    color: #333;
+    border-color: transparent;
+    min-width: 12vw;
+}
+
+.confirm-button {
+    background-color: #4caf50;
+    color: white;
+}
+
+/* Added hover effects */
+.cancel-button:hover {
+    background-color: #b9b7b7 !important; /* Slightly darker gray */
+}
+
+.confirm-button:hover {
+    background-color: #3d8b41 !important; /* Slightly darker green */
+}
+
+/* Mobile-Specific Styles */
+@media (max-width: 768px) {
+    .confirm-dialog {
+        width: 26.5rem;
+        text-align: center;
+    }
+
+    .confirm-dialog-content {
+        margin-top: 1.5rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .confirm-dialog-buttons {
+        display: flex;
+        justify-content: space-between;
+        padding: 0 1rem;
+    }
+
+    .cancel-button,
+    .confirm-button {
+        background-color: #f5f5f5;
+        color: #333;
+        border-color: transparent;
+        min-width: 10rem;
+    }
+
+    .confirm-button {
+        background-color: #4caf50;
+        color: white;
+    }
+
+    /* Added hover effects for mobile */
+    .cancel-button:hover {
+        background-color: #b9b7b7 !important; /* Slightly darker gray */
+    }
+
+    .confirm-button:hover {
+        background-color: #3d8b41 !important; /* Slightly darker green */
+    }
+}

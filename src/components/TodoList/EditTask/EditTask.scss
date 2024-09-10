@@ -1,0 +1,379 @@
+/* Default styles for non-mobile devices */
+.edit-task-dialog,
+.create-task-dialog {
+    resize: none;
+    width: 90%; /* Reduce the width of the dialog */
+    max-width: 67rem; /* Set a max-width to ensure it doesn't get too wide */
+    height: 80%; /* Reduce the height of the dialog */
+    max-height: 46rem; /* Set a max-height to ensure it doesn't get too tall */
+}
+
+/* Dialog Header Styles */
+.edit-task-dialog .p-dialog-header,
+.create-task-dialog .p-dialog-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1.5rem;
+    text-align: center;
+}
+
+/* Dialog Content Styles */
+.edit-task-dialog .p-dialog-content,
+.create-task-dialog .p-dialog-content {
+    padding: 1.5rem;
+    width: 100%;
+}
+
+/* Button Container */
+.edit-task-buttons,
+.create-task-buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1.5rem;
+}
+
+/* Button Styles */
+.edit-task-dialog .edit-task-button-primary,
+.edit-task-dialog .edit-task-button-secondary,
+.create-task-dialog .create-task-button-primary,
+.create-task-dialog .create-task-button-secondary {
+    margin: 0;
+    padding: 0.75rem 2rem;
+    width: auto;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.edit-task-dialog .edit-task-button-primary,
+.create-task-dialog .create-task-button-primary {
+    background-color: #3498db;
+    color: #fff;
+}
+
+.edit-task-dialog .edit-task-button-primary:hover,
+.create-task-dialog .create-task-button-primary:hover {
+    background-color: #2980b9;
+}
+
+.edit-task-dialog .edit-task-button-secondary,
+.create-task-dialog .create-task-button-secondary {
+    background-color: #7f8c8d;
+    color: #fff;
+}
+
+.edit-task-dialog .edit-task-button-secondary:hover,
+.create-task-dialog .create-task-button-secondary:hover {
+    background-color: #95a5a6;
+}
+
+/* Input Field Styles */
+.edit-task-form,
+.create-task-form {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    width: 100%;
+    margin-bottom: 0;
+}
+
+/* Field Styles */
+.edit-task-field,
+.create-task-field {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.5rem;
+    width: 100%;
+}
+
+.edit-task-field.full-width,
+.create-task-field.full-width {
+    width: 100%;
+}
+
+.edit-task-field-row,
+.create-task-field-row {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.edit-task-field.half-width,
+.create-task-field.half-width {
+    width: 48%;
+    box-sizing: border-box;
+}
+
+/* General label styling */
+.edit-task-field label,
+.create-task-field label {
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 0.5rem;
+}
+
+/* General input styling */
+.edit-task-input,
+.create-task-input {
+    padding: 0.75rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.edit-task-input:focus,
+.create-task-input:focus {
+    border-color: #00eeff;
+    box-shadow: 0 0 5px rgba(52, 152, 219, 0.5);
+}
+/* Styles specifically for the Açıklama (description) field */
+.aciklama-input {
+    padding: 0.75rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+    box-sizing: border-box;
+    height: 12rem; /* Set the height to your desired value */
+    resize: none; /* Prevent the textarea from being resized */
+}
+
+.aciklama-input:focus {
+    border-color: #00eeff;
+    box-shadow: 0 0 5px rgba(52, 152, 219, 0.5);
+}
+
+/* Error message styling */
+.edit-task-error-message,
+.create-task-error-message {
+    color: red;
+    margin-top: 0.5rem;
+}
+
+/* Dropdown Styling */
+.edit-task-dialog .p-dropdown .p-dropdown-label,
+.create-task-dialog .p-dropdown .p-dropdown-label {
+    padding: 0.75rem;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+}
+
+.edit-task-dialog .p-dropdown .p-dropdown-item,
+.create-task-dialog .p-dropdown .p-dropdown-item {
+    padding: 0.75rem;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+}
+
+/* Specific Styling for "Termin Tarihi" Field */
+.edit-task-dialog .p-calendar .p-inputtext,
+.create-task-dialog .p-calendar .p-inputtext {
+    padding: 0.75rem;
+    height: 4.6rem; /* Non-mobile height */
+    border-radius: 4px 0 0 4px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+}
+
+/* Calendar Component Styling */
+.edit-task-dialog .p-calendar .p-inputtext ~ .p-datepicker-trigger,
+.create-task-dialog .p-calendar .p-inputtext ~ .p-datepicker-trigger {
+    background-color: #8a2be2;
+    border-radius: 0 4px 4px 0;
+    color: #fff;
+    padding: 0.75rem;
+    height: 4.6rem; /* Non-mobile height */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.edit-task-dialog .p-calendar .p-inputtext ~ .p-datepicker-trigger:hover,
+.create-task-dialog .p-calendar .p-inputtext ~ .p-datepicker-trigger:hover {
+    background-color: #6a1bb1;
+}
+
+.edit-task-dialog .p-calendar .p-datepicker-trigger .pi,
+.create-task-dialog .p-calendar .p-datepicker-trigger .pi {
+    font-size: 1.2rem;
+}
+
+/* Mobile-specific styles */
+@media (max-width: 768px) {
+    .edit-task-dialog,
+    .create-task-dialog {
+        resize: none;
+        width: 90%; /* Reduce the width of the dialog */
+        max-width: 30rem; /* Set a max-width to ensure it doesn't get too wide */
+        height: 80%; /* Reduce the height of the dialog */
+        max-height: 25rem; /* Set a max-height to ensure it doesn't get too tall */
+    }
+
+    /* Dialog Header Styles */
+    .edit-task-dialog .p-dialog-header,
+    .create-task-dialog .p-dialog-header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0.5rem 0.75rem; /* Reduce padding */
+        text-align: center;
+    }
+
+    /* Dialog Content Styles */
+    .edit-task-dialog .p-dialog-content,
+    .create-task-dialog .p-dialog-content {
+        padding: 0.75rem 1rem; /* Reduce padding */
+        width: 100%;
+    }
+
+    /* Button Container */
+    .edit-task-buttons,
+    .create-task-buttons {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 0.5rem;
+    }
+
+    /* Button Styles */
+    .edit-task-dialog .edit-task-button-primary,
+    .edit-task-dialog .edit-task-button-secondary,
+    .create-task-dialog .create-task-button-primary,
+    .create-task-dialog .create-task-button-secondary {
+        margin: 0;
+        padding: 0.5rem 3rem; /* Reduce padding */
+        width: 48%;
+        max-width: 15rem; /* Reduce max-width */
+        box-sizing: border-box;
+        height: 2.2rem; /* Reduce height */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    /* Input Field Styles */
+    .edit-task-form,
+    .create-task-form {
+        display: flex;
+        flex-direction: column;
+        padding: 8px;
+        width: 100%;
+        margin-bottom: 0;
+    }
+
+    /* Field Styles */
+    .edit-task-field,
+    .create-task-field {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 8px;
+        width: 100%;
+    }
+
+    .edit-task-field.full-width,
+    .create-task-field.full-width {
+        width: 100%;
+    }
+
+    .edit-task-field-row,
+    .create-task-field-row {
+        display: flex;
+        flex-direction: column; /* Stack fields vertically on mobile */
+        width: 100%;
+    }
+
+    .edit-task-field.half-width,
+    .create-task-field.half-width {
+        width: 100%; /* Full width for each field on mobile */
+        box-sizing: border-box;
+    }
+
+    /* General input styling */
+    .edit-task-input,
+    .create-task-input {
+        padding: 0.35rem; /* Reduce padding */
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    /* Styles specifically for the Açıklama (description) field */
+    .aciklama-input {
+        padding: 0.75rem;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        width: 100%;
+        box-sizing: border-box;
+        height: 8rem; /* Set the height to your desired value */
+        resize: none; /* Prevent the textarea from being resized */
+    }
+
+    /* Dropdown Styling for Program Adı and Priority Level */
+    .edit-task-dialog .p-dropdown .p-dropdown-label,
+    .create-task-dialog .p-dropdown .p-dropdown-label {
+        padding: 0.6rem 0.8rem; /* Reduce padding */
+        height: 2.7rem; /* Set height to 2.7rem */
+        display: flex;
+        align-items: center;
+    }
+
+    .edit-task-dialog .p-dropdown .p-dropdown-item,
+    .create-task-dialog .p-dropdown .p-dropdown-item {
+        padding: 0.6rem 0.8rem; /* Reduce padding */
+        height: 2.7rem; /* Set height to 2.7rem */
+        display: flex;
+        align-items: center;
+    }
+
+    /* Tag Component Styling */
+    .edit-task-dialog .p-tag,
+    .create-task-dialog .p-tag {
+        padding: 0.15rem 0.4rem; /* Reduce padding */
+        font-size: 0.85rem; /* Slightly reduce font size */
+        line-height: 1.1rem; /* Adjust line height */
+        border-radius: 6.5px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        height: auto;
+        max-width: 100%;
+        box-sizing: border-box;
+    }
+
+    /* Calendar Component Styling */
+    .edit-task-dialog .p-calendar .p-inputtext ~ .p-datepicker-trigger,
+    .create-task-dialog .p-calendar .p-inputtext ~ .p-datepicker-trigger {
+        background-color: #8a2be2;
+        border-radius: 0 4px 4px 0;
+        color: #fff;
+        padding: 0.6rem; /* Reduce padding */
+        height: 2.7rem; /* Match the height of the input */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .edit-task-dialog .p-calendar .p-inputtext ~ .p-datepicker-trigger:hover,
+    .create-task-dialog .p-calendar .p-inputtext ~ .p-datepicker-trigger:hover {
+        background-color: #6a1bb1;
+    }
+
+    .edit-task-dialog .p-calendar .p-datepicker-trigger .pi,
+    .create-task-dialog .p-calendar .p-datepicker-trigger .pi {
+        font-size: 1.2rem;
+    }
+
+    .edit-task-dialog .p-calendar .p-inputtext,
+    .create-task-dialog .p-calendar .p-inputtext {
+        border-radius: 4px 0 0 4px;
+        height: 2.7rem; /* Match the height of the Program Name and Priority Level fields on mobile */
+    }
+}

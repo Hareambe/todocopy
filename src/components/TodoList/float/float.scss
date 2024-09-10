@@ -1,0 +1,31 @@
+.form-floating {
+    position: relative;
+    width: 100%;
+}
+
+.form-floating label {
+    position: absolute;
+    top: 6rem;
+    left: 0.75rem;
+    transition: all 0.2s ease;
+    background: white;
+    padding: 0 0.25rem;
+    pointer-events: none;
+}
+
+.form-floating .form-select {
+    height: 2.9rem; /* Let the height be controlled by content */
+
+    line-height: 1.5rem; /* Control the height of the text */
+    font-size: 1rem; /* Adjust the font size if needed */
+    text-align: left; /* Align text to the left, adjust if you need center or right alignment */
+    display: flex;
+    align-items: center; /* Vertically center the text */
+}
+
+.form-floating label.float {
+    top: -0.5rem;
+    left: 0.75rem;
+    font-size: 0.75rem;
+    color: #007ad9; /* Adjust this color to match your theme */
+}
